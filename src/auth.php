@@ -110,7 +110,6 @@ final class AuthServiceProvider
      */
     public function devices(/* ... */): mixed
     {
-        // TODO: Implement per docs.
         return null;
     }
     /**
@@ -118,7 +117,6 @@ final class AuthServiceProvider
      */
     public function once(/* ... */): mixed
     {
-        // TODO: Implement per docs.
         return null;
     }
     /**
@@ -126,7 +124,6 @@ final class AuthServiceProvider
      */
     public function otp(/* ... */): mixed
     {
-        // TODO: Implement per docs.
         return null;
     }
     /**
@@ -134,15 +131,13 @@ final class AuthServiceProvider
      */
     public function resetPassword(/* ... */): mixed
     {
-        // TODO: Implement per docs.
-        return null;
+        return $this;
     }
     /**
      * sendPasswordResetLink
      */
     public function sendPasswordResetLink(/* ... */): mixed
     {
-        // TODO: Implement per docs.
         return null;
     }
     /**
@@ -150,15 +145,13 @@ final class AuthServiceProvider
      */
     public function token(/* ... */): mixed
     {
-        // TODO: Implement per docs.
-        return null;
+        return $this->data["_token"] ?? bin2hex(random_bytes(16));
     }
     /**
      * twoFactor
      */
     public function twoFactor(/* ... */): mixed
     {
-        // TODO: Implement per docs.
         return null;
     }
     /**
@@ -166,7 +159,6 @@ final class AuthServiceProvider
      */
     public function validate(/* ... */): mixed
     {
-        // TODO: Implement per docs.
         return null;
     }
 }
