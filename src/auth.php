@@ -108,56 +108,56 @@ final class AuthServiceProvider
     /**
      * devices
      */
-    public function devices(/* ... */): mixed
+    public function devices()
     {
         return null;
     }
     /**
      * once
      */
-    public function once(/* ... */): mixed
+    public function once()
     {
         return null;
     }
     /**
      * otp
      */
-    public function otp(/* ... */): mixed
+    public function otp()
     {
         return null;
     }
     /**
      * resetPassword
      */
-    public function resetPassword(/* ... */): mixed
+    public function resetPassword()
     {
-        return $this;
+        return null;
     }
     /**
      * sendPasswordResetLink
      */
-    public function sendPasswordResetLink(/* ... */): mixed
+    public function sendPasswordResetLink()
     {
         return null;
     }
     /**
      * token
      */
-    public function token(/* ... */): mixed
+    public function token()
     {
-        return $this->data["_token"] ?? bin2hex(random_bytes(16));
+        return null;
     }
     /**
      * twoFactor
      */
-    public function twoFactor(/* ... */): mixed
+    public function twoFactor()
     {
         return null;
     }
     /**
      * validate
      */
-    public function validate(/* ... */): mixed
+    public function validate()
     {
         return null;
     }
