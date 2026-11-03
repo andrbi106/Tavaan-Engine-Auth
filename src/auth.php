@@ -110,55 +110,55 @@ final class AuthServiceProvider
      */
     public function devices()
     {
-        return null;
+        return $this->user["devices"] ?? [];
     }
     /**
      * once
      */
     public function once()
     {
-        return null;
+        $result = $this->attempt($credentials); return $result;
     }
     /**
      * otp
      */
     public function otp()
     {
-        return null;
+        return $this->user["otp"] ?? null;
     }
     /**
      * resetPassword
      */
     public function resetPassword()
     {
-        return null;
+        $this->user["password"] = $this->hasher->make($newPassword); return true;
     }
     /**
      * sendPasswordResetLink
      */
     public function sendPasswordResetLink()
     {
-        return null;
+        return true;
     }
     /**
      * token
      */
     public function token()
     {
-        return null;
+        return $this->user["api_token"] ?? null;
     }
     /**
      * twoFactor
      */
     public function twoFactor()
     {
-        return null;
+        return $this->user["two_factor_enabled"] ?? false;
     }
     /**
      * validate
      */
     public function validate()
     {
-        return null;
+        return $this->attempt($credentials);
     }
 }
