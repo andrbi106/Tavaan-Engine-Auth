@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace Tavaan\Engine\Auth\Throttle;
 
-use Tavaan\Core\Contracts\Cache\RepositoryInterface;
+use Tavaan\Engine\Cache\Contracts\RepositoryInterface;
 use Tavaan\Support\Time\Clock;
 
 /**

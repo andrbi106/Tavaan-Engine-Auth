@@ -4,10 +4,10 @@ declare(strict_types=1);
 
 namespace Tavaan\Engine\Auth\Providers;
 
-use Tavaan\Core\Contracts\Auth\Authenticatable;
-use Tavaan\Core\Contracts\Auth\UserProviderInterface;
-use Tavaan\Core\Contracts\Database\ConnectionInterface;
-use Tavaan\Core\Contracts\Encryption\HasherInterface;
+use Tavaan\Engine\Auth\Contracts\Authenticatable;
+use Tavaan\Engine\Auth\Contracts\UserProviderInterface;
+use Tavaan\Engine\Database\Contracts\ConnectionInterface;
+use Tavaan\Engine\Crypt\Contracts\HasherInterface;
 use Tavaan\Engine\Auth\GenericUser;
 
 /**

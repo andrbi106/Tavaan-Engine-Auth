@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace Tavaan\Engine\Auth\Otp;
 
-use Tavaan\Core\Contracts\Auth\Authenticatable;
+use Tavaan\Engine\Auth\Contracts\Authenticatable;
 
 /**
  * تَوان | Tavaan — Auth

@@ -4,8 +4,8 @@ declare(strict_types=1);
 
 namespace Tavaan\Engine\Auth\Otp;
 
-use Tavaan\Core\Contracts\Auth\Authenticatable;
-use Tavaan\Core\Contracts\Log\LoggerInterface;
+use Tavaan\Engine\Auth\Contracts\Authenticatable;
+use Tavaan\Engine\Log\Contracts\LoggerInterface;
 
 /**
  * تَوان | Tavaan — Auth

@@ -4,9 +4,9 @@ declare(strict_types=1);
 
 namespace Tavaan\Engine\Auth;
 
-use Tavaan\Core\Contracts\Auth\Authenticatable;
-use Tavaan\Core\Contracts\Database\ConnectionInterface;
-use Tavaan\Core\Contracts\Encryption\EncrypterInterface;
+use Tavaan\Engine\Auth\Contracts\Authenticatable;
+use Tavaan\Engine\Database\Contracts\ConnectionInterface;
+use Tavaan\Engine\Crypt\Contracts\EncrypterInterface;
 use Tavaan\Core\Contracts\Events\DispatcherInterface;
 use Tavaan\Engine\Auth\Exceptions\TokenInvalidException;
 use Tavaan\Engine\Auth\Jwt\JwtEncoder;

@@ -4,8 +4,8 @@ declare(strict_types=1);
 
 namespace Tavaan\Engine\Auth\Devices;
 
-use Tavaan\Core\Contracts\Auth\Authenticatable;
-use Tavaan\Core\Contracts\Database\ConnectionInterface;
+use Tavaan\Engine\Auth\Contracts\Authenticatable;
+use Tavaan\Engine\Database\Contracts\ConnectionInterface;
 use Tavaan\Support\Time\Clock;
 
 /**

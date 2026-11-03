@@ -4,9 +4,9 @@ declare(strict_types=1);
 
 namespace Tavaan\Engine\Auth\Otp;
 
-use Tavaan\Core\Contracts\Auth\Authenticatable;
-use Tavaan\Core\Contracts\Cache\RepositoryInterface;
-use Tavaan\Core\Contracts\Encryption\HasherInterface;
+use Tavaan\Engine\Auth\Contracts\Authenticatable;
+use Tavaan\Engine\Cache\Contracts\RepositoryInterface;
+use Tavaan\Engine\Crypt\Contracts\HasherInterface;
 use Tavaan\Core\Contracts\Events\DispatcherInterface;
 use Tavaan\Engine\Auth\Throttle\LoginThrottle;
 

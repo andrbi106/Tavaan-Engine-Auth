@@ -4,10 +4,10 @@ declare(strict_types=1);
 
 namespace Tavaan\Engine\Auth\Middleware;
 
-use Tavaan\Core\Contracts\Http\MiddlewareInterface;
-use Tavaan\Core\Contracts\Http\RequestInterface;
-use Tavaan\Core\Contracts\Http\ResponseInterface;
-use Tavaan\Core\Exceptions\Auth\AuthenticationException;
+use Tavaan\Engine\Http\Contracts\MiddlewareInterface;
+use Tavaan\Engine\Http\Contracts\RequestInterface;
+use Tavaan\Engine\Http\Contracts\ResponseInterface;
+use Tavaan\Engine\Auth\Exceptions\AuthenticationException;
 use Tavaan\Engine\Auth\AuthManager;
 use Tavaan\Engine\Auth\Guards\SessionGuard;
 
