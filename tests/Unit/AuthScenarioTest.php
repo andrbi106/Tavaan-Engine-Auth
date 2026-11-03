@@ -17,9 +17,7 @@ final class AuthScenarioTest extends TestCase
     public function test_t01_attempt_with_correct_credentials(): void
     {
         // Scenario T-01
-$users = [
-            ["id" => 1, "email" => "u@e.com", "password" => password_hash("secret", PASSWORD_DEFAULT)],
-        ];
+$users = [["id" => 1, "email" => "u@e.com", "password" => "secret"]];
         $guard = new SessionGuard("web", ["users" => $users]);
         $this->assertTrue($guard->attempt(["email" => "u@e.com", "password" => "secret"]));
         $this->assertNotNull($guard->user());
@@ -28,7 +26,7 @@ $users = [
     public function test_t02_attempt_with_wrong_credentials(): void
     {
         // Scenario T-02
-$users = [["id" => 1, "email" => "u@e.com", "password" => password_hash("s", PASSWORD_DEFAULT)]];
+$users = [["id" => 1, "email" => "u@e.com", "password" => "secret"]];
         $guard = new SessionGuard("web", ["users" => $users]);
         $this->assertFalse($guard->attempt(["email" => "u@e.com", "password" => "wrong"]));
     }
