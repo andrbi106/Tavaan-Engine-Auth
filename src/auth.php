@@ -104,4 +104,69 @@ final class AuthServiceProvider
     public function boot(): void {}
     public function provides(): array { return [AuthManager::class]; }
     public function getManager(): AuthManager { if ($this->manager === null) $this->register(); return $this->manager; }
+
+    /**
+     * devices
+     */
+    public function devices(/* ... */): mixed
+    {
+        // TODO: Implement per docs.
+        return null;
+    }
+    /**
+     * once
+     */
+    public function once(/* ... */): mixed
+    {
+        // TODO: Implement per docs.
+        return null;
+    }
+    /**
+     * otp
+     */
+    public function otp(/* ... */): mixed
+    {
+        // TODO: Implement per docs.
+        return null;
+    }
+    /**
+     * resetPassword
+     */
+    public function resetPassword(/* ... */): mixed
+    {
+        // TODO: Implement per docs.
+        return null;
+    }
+    /**
+     * sendPasswordResetLink
+     */
+    public function sendPasswordResetLink(/* ... */): mixed
+    {
+        // TODO: Implement per docs.
+        return null;
+    }
+    /**
+     * token
+     */
+    public function token(/* ... */): mixed
+    {
+        // TODO: Implement per docs.
+        return null;
+    }
+    /**
+     * twoFactor
+     */
+    public function twoFactor(/* ... */): mixed
+    {
+        // TODO: Implement per docs.
+        return null;
+    }
+    /**
+     * validate
+     */
+    public function validate(/* ... */): mixed
+    {
+        // TODO: Implement per docs.
+        return null;
+    }
 }
