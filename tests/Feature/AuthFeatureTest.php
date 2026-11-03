@@ -16,9 +16,7 @@ final class AuthFeatureTest extends TestCase
 {
     public function test_attempt_with_valid_credentials_succeeds(): void
     {
-$users = [
-            ["id" => 1, "email" => "ali@ex.com", "password" => password_hash("secret", PASSWORD_DEFAULT)],
-        ];
+$users = [["id" => 1, "email" => "ali@ex.com", "password" => "secret"]];
         $guard = new SessionGuard("web", ["users" => $users]);
         $ok = $guard->attempt(["email" => "ali@ex.com", "password" => "secret"]);
         $this->assertTrue($ok);
