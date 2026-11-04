@@ -48,5 +48,6 @@
     "accessor": "auth"
   },
   "docs": "docs/03-engines/auth.md",
-  "notes": "M4 — چند Guard (session/jwt)، JWT خودنوشته با algorithm pinning، refresh rotation + reuse detection، OTP یک‌بارمصرف، TOTP RFC 6238، Device tracking، Session hardening، Password broker."
+  "notes": "M4 — چند Guard (session/jwt)، JWT خودنوشته با algorithm pinning، refresh rotation + reuse detection، OTP یک‌بارمصرف، TOTP RFC 6238، Device tracking، Session hardening، Password broker.",
+  "class": "Tavaan\\Engine\\Auth\\AuthEngine"
 }
