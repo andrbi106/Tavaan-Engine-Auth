@@ -11,7 +11,7 @@
     }
   },
   "providers": [
-    "Tavaan\\Engine\\Auth\\AuthManagerServiceProvider"
+    "Tavaan\\Engine\\Auth\\AuthServiceProvider"
   ],
   "requires": {
     "php": ">=8.2",
