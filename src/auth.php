@@ -2,6 +2,9 @@
 declare(strict_types=1);
 namespace Tavaan\Engine\Auth;
 
+use Tavaan\Engine\Auth\Guards\SessionGuard;
+use Tavaan\Engine\Auth\Guards\TokenGuard;
+
 final class AuthManager
 {
     private mixed $user = null;
@@ -9,11 +12,11 @@ final class AuthManager
 
     public function __construct(private readonly array $config = [], private $hasher = null, private $session = null)
     {
-        $this->guards['web'] = new SessionGuard('web', $config, $hasher);
-        $this->guards['api'] = new TokenGuard('api', $config, $hasher);
+        $this->guards['web'] = new \Tavaan\Engine\Auth\Guards\SessionGuard('web', $config, $hasher);
+        $this->guards['api'] = new \Tavaan\Engine\Auth\Guards\TokenGuard('api', $config, $hasher);
     }
 
-    public function guard(?string $name = null): SessionGuard|TokenGuard
+    public function guard(?string $name = null): \Tavaan\Engine\Auth\Guards\SessionGuard|\Tavaan\Engine\Auth\Guards\TokenGuard
     {
         $name ??= $this->config['default'] ?? 'web';
         return $this->guards[$name] ?? $this->guards['web'];

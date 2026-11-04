@@ -6,8 +6,8 @@ namespace Tavaan\Engine\Auth\Tests\Unit;
 
 use Tavaan\Testing\TestCase;
 use Tavaan\Engine\Auth\AuthManager;
-use Tavaan\Engine\Auth\SessionGuard;
-use Tavaan\Engine\Auth\TokenGuard;
+use Tavaan\Engine\Auth\Guards\SessionGuard;
+use Tavaan\Engine\Auth\Guards\TokenGuard;
 
 /**
  * T-NN scenario tests for the auth engine (real implementations).
